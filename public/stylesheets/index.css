@@ -56,3 +56,41 @@ header h1{
 	left:220px;
 	border: solid #fff 1px;
 }
+header .type {
+    display: inline-block;
+    margin: 0 auto
+}
+
+header .type:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+header .type li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    cursor: pointer
+}
+
+header .type li:first-child {
+    border-left: solid 1px #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+header .type li:last-child {
+	border-right: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+header .type li.selected {
+    background: #fff;
+    color: #000
+}
